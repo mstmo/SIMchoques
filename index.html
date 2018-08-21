@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script type="text/javascript" src="lib/jquery.min.js" ></script>
+	<script type="text/javascript" src='lib/matter.min.js' ></script>
+	
+	<link rel="stylesheet" href="CSS/bootstrap-grid.min.css">
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<canvas  id="Screen" style="border: 0.1em solid black;">
+				</canvas>
+			</div>
+
+			<div class="col-sm">
+				<form action="index_submit" method="get" accept-charset="utf-8">
+					<label for="direccion1">Particula 1:</label>
+					<input type="text" name="direccion1" placeholder="Direccion">
+										<select name="poscion1">
+						<option value="710">Derecha</option>
+						<option value="10">Izquierda</option>
+						<option value="340">Centro</option>
+					</select>
+					<br>
+					<label for="direccion2">Particula 2:</label>
+					<input type="text" name="direccion2" value="" placeholder="Direccion">
+					<select name="poscion2">
+						<option value="710">Derecha</option>
+						<option value="10">Izquierda</option>
+						<option value="340">Centro</option>
+
+					<br>
+					<label for="v1">Particula 2:</label>
+					<input type="text" name="v1" id="v1" placeholder="Velocidad">
+					<br>
+					<label for="v2">Particula 2:</label>
+					<input type="text" name="v2" id="v2" placeholder="Velocidad">
+					<button type="button" onclick="set()"> Set</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+
+<footer>
+<!--script type="text/javascript" src='Scripts/index.js'></script-->
+<script src="Scripts/Particula.js" type="text/javascript"></script>
+<script src="Scripts/index.js" type="text/javascript"></script>
+
+</footer>
+</html>
